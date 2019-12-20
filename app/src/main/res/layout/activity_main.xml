@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sll.luahook.MainActivity">
+
+    <EditText
+        android:id="@+id/lua_script"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:contentDescription="lua_script"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="请输入Lua脚本"
+        android:inputType="text|textAutoComplete|textMultiLine|textImeMultiLine|textLongMessage"
+        tools:padding="@dimen/text" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10.0"
+        android:clickable="true"
+        android:onClick="save"
+        android:text="保存"
+        tools:padding="@dimen/text" />
+</LinearLayout>
